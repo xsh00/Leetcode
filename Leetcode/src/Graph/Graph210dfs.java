@@ -42,7 +42,7 @@ public class Graph210dfs {        //210-课程表-拓扑排序
         }
 
         for(int j = 0;j < numCourses;j++) {
-            System.out.println(result[j]);
+            System.out.print(result[j]+" ");
         }
     return result;
     }
@@ -74,9 +74,9 @@ public class Graph210dfs {        //210-课程表-拓扑排序
     }
 
 
-    public static void main (String [] arg) {
-        int numCourses = 2;
-        int[][] prerequisites = {{1,0},{0,1}};
+    public static void main (String [] arg) {                                  //测试用例
+        int numCourses = 5;
+        int[][] prerequisites = {{1,2},{3,1},{3,2},{4,3}};
 
 
         findOrder(numCourses,prerequisites);
