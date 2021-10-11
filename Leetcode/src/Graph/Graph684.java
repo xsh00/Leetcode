@@ -3,7 +3,8 @@ import java.util.List;
 import java.util.ArrayList;
 
 
-public class Graph684 {     //684-冗余连接-并查集
+public class Graph684 {     //684-冗余连接-uf
+    //uf
 
     public static int number;
     public static int preNode [];                                 //并查集中每个节点的元节点

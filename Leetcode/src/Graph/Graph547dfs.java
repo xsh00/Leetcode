@@ -2,7 +2,7 @@ package Graph;
 import java.util.List;
 import java.util.ArrayList;
 
-public class Graph547 {       //547-省份数量-dfs/bfs/并查集
+public class Graph547dfs {       //547-省份数量-dfs/bfs/uf
     //dfs
 
     public static int [] isVisited;                          //节点访问状态 0/1
@@ -34,9 +34,9 @@ public class Graph547 {       //547-省份数量-dfs/bfs/并查集
     public static void dfs(int node) {
 
 
-        for(int  Node : connected[node]) {
+        for(int  Node = 0 ; Node < city ; Node++) {
 
-            if(isVisited[Node] == 0 && connected[node][Node] ==1) {
+            if(isVisited[Node] == 0 && connected[node][Node] == 1) {
                 isVisited[node] = 1;
                 dfs(Node);
             }
